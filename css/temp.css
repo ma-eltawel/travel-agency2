@@ -1,0 +1,372 @@
+/* start global */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root{
+    --main-col: #1d6efd;
+    --bg-col: #f9f9f9;
+    --text-shad: 0 1px 1px black;
+    --box-shad: 0 5px 5px -6px black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+.head{
+    font-weight: 600;
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: var(--text-shad);
+}
+.head::first-letter{
+    color: var(--main-col);
+}
+/* end global */
+/* start header */
+nav{
+    background-color: var(--bg-col);
+}
+nav .navbar-brand{
+    color: black;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-shadow: var(--text-shad);
+}
+nav .navbar-brand span, .navbar-toggler span{
+    color: var(--main-col);
+}
+nav .navbar-nav{
+    margin-left: 40px;
+}
+nav .nav-link{
+    color: black;
+    font-weight: 550;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+nav .nav-link:hover{
+    color: white;
+    background-color: var(--main-col);
+}
+/* end header */
+/* start home */
+#home{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.2)), url(../images/home.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#home .content{
+    color: white;
+    font-weight: 550;
+    padding-top: 200px;
+    text-align: center;
+}
+#home h5{
+    font-size: 38px;
+    text-shadow: var(--text-shad);
+}
+#home h1{
+    font-size: 60px;
+    margin-top: 5px;
+    text-shadow: var(--text-shad);
+}
+#home p{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px 0 30px;
+    text-shadow: var(--text-shad);
+}
+#home .change-content::after{
+    content: '';
+    color: var(--main-col);
+    animation: changeText 10s infinite linear;
+}
+#home a{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+#home a:hover{
+    color: white;
+    background-color: var(--main-col);
+}
+/* end home */
+/* start about */
+#about{
+    background-color: var(--bg-col);
+    padding: 50px;
+    margin-top: 50px;
+}
+#about .row{
+    margin-top: 50px;
+}
+#about .card{
+    border-radius: 10px;
+}
+#about img{
+    border-radius: 10px;
+}
+#about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#about p{
+    font-weight: 500;
+}
+#about button{
+    color: white;
+    font-weight: 550;
+    width: 150px;
+    height: 38px;
+    background-color: var(--main-col);
+    border-radius: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#about button:hover{
+    width: 160px;
+}
+/* end about */
+/* start packages */
+#packages .row{
+    margin-top: 30px;
+}
+#packages .card{
+    background-color: var(--bg-col);
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0, 0.2) 0 4px 12px;
+}
+#packages img{
+    border-radius: 5px;
+}
+#packages h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+#packages p, #packages .stars{
+    font-size: 15px;
+}
+#packages .content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#packages .stars i{
+    color: var(--main-col);
+}
+#packages h6{
+    font-size: 20px;
+}
+#packages a{
+    color: white;
+    background-color: var(--main-col);
+    padding: 10px;
+    border: 2px solid var(--main-col);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+#packages a:hover{
+    color: var(--main-col);
+    background: white;
+}
+/* end packages */
+/* start book */
+#book{
+    background-color: var(--bg-col);
+    padding: 50px;
+}
+#book .card{
+    border-radius: 10px;
+    box-shadow: var(--box-shad);
+}
+#book .row{
+    margin-top: 30px;
+}
+#book input{
+    margin-bottom: 20px;
+}
+#book input, #book textarea{
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--box-shad);
+}
+#book textarea{
+    height: 200px;
+    resize: none;
+}
+#book .submit{
+    color: white;
+    font-size: 16px;
+    font-weight: 550;
+    background-color: var(--main-col);
+    width: 160px;
+    margin-top: 10px;
+    transition: 0.4s;
+}
+#book .submit:hover{
+    width: 180px;
+    letter-spacing: 1px;
+}
+/* end book */
+/* start services */
+#services{
+    background-color: var(--bg-col);
+    margin-top: 50px;
+}
+#services .row{
+    margin-top: 30px;
+}
+#services .card{
+    text-align: center;
+    border: none;
+    box-shadow: rgb(0, 0, 0, 0.2) 0 4px 12px;
+    cursor: pointer;
+}
+#services .card i{
+    color: var(--main-col);
+    font-size: 80px;
+    margin-top: 20px;
+}
+#services h3{
+    font-weight: 600;
+}
+/* end services */
+/* start gallery */
+#gallery{
+    margin-top: 50px;
+}
+#gallery .row{
+    margin-top: 30px;
+}
+#gallery .card{
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0, 0.2) 0 4px 12px;
+    cursor: pointer;
+}
+#gallery img{
+    height: 240px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+#gallery img:hover{
+    transform: scale(1.1);
+}
+/* end gallery */
+/* start footer */
+footer{
+    background-color: var(--bg-col);
+    text-align: center;
+    margin-top: 140px;
+}
+footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: var(--text-shad);
+}
+footer h1::first-letter{
+    color: var(--main-col);
+}
+footer .social i{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+footer .social i:hover{
+    background-color: var(--main-col);
+}
+footer .develop{
+    margin-top: 20px;
+}
+footer .develop a{
+    color: var(--main-col);
+    font-weight: bold;
+    text-decoration: none;
+}
+footer .develop a:hover{
+    color: black;
+    text-decoration: underline;
+}
+/* end footer */
+/* start media quieries */
+@media (max-width: 850px){
+    .head{
+        margin-top: 20px;
+    }
+    #home{
+        background-position: 50%;
+    }
+    #about, #book{
+        padding: 0;
+    }
+}
+@media (max-width: 450px){
+    #home h5{
+        font-size: 25px;
+    }
+    #home h1{
+        font-size: 38px;
+    }
+    #home p{
+        font-size: 12px;
+    }
+}
+/* end media quieries */
+/* start animation */
+@keyframes changeText {
+    0%{
+        content: 'Palestine';
+    }
+    10%{
+        content: 'Syria';
+    }
+    20%{
+        content: 'Egypt';
+    }
+    30%{
+        content: 'Tunisia';
+    }
+    40%{
+        content: 'Moroco';
+    }
+    50%{
+        content: 'Emirates';
+    }
+    60%{
+        content: 'Saudia';
+    }
+    70%{
+        content: 'Japan';
+    }
+    80%{
+        content: 'Spain';
+    }
+    90%{
+        content: 'England';
+    }
+    100%{
+        content: 'Italy';
+    }
+}
+/* end animation */
